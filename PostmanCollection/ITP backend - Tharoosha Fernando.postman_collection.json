@@ -1,16 +1,16 @@
 {
 	"info": {
-		"_postman_id": "5a789414-bfe4-4fda-8bf9-6bffe7d8ac92",
+		"_postman_id": "7ff5b015-ae54-4aeb-9240-621d19723d34",
 		"name": "ITP backend - Tharoosha Fernando",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "11839336"
 	},
 	"item": [
 		{
-			"name": "Employee",
+			"name": "Document Records",
 			"item": [
 				{
-					"name": "Get All Employees",
+					"name": "Get All Document records",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -32,7 +32,7 @@
 					"response": []
 				},
 				{
-					"name": "Get employee by id",
+					"name": "Get Document record by id",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -54,7 +54,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete Employee",
+					"name": "Delete Document record",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -90,7 +90,7 @@
 					"response": []
 				},
 				{
-					"name": "Add Employee",
+					"name": "Add Document record",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -103,7 +103,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstName\":\"Naween\",\r\n    \"lastName\":\"Rathnayake\",\r\n    \"age\":\"24\",\r\n    \"address\":\"267, Denithuduwa Road, Baddegoda, Bandaragama\",\r\n    \"phone\":\"0771556157\",\r\n    \"dob\":\"03/04/2017\",\r\n    \"department\":\"FireDept\"\r\n}",
+							"raw": "{\r\n    \"docName\": \"Naween\",\r\n    \"category\": \"Rathnayake\",\r\n    \"date\": \"03/04/2017\",\r\n    \"description\": \"Test description\",\r\n    \"createdEmp\": \"Kalana Rathnayake\",\r\n    \"empTitle\": \"ASE\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -111,7 +111,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/employee/add",
+							"raw": "http://localhost:5000/api/document/add",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -119,7 +119,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"employee",
+								"document",
 								"add"
 							]
 						},
@@ -128,7 +128,7 @@
 					"response": []
 				},
 				{
-					"name": "Edit Employee",
+					"name": "Edit Document record",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -147,7 +147,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstName\":\"Aruna\",\r\n    \"lastName\":\"Rathnayake\",\r\n    \"age\":\"24\",\r\n    \"address\":\"267, Denithuduwa Road, Baddegoda, Bandaragama\",\r\n    \"phone\":\"0771556157\",\r\n    \"dob\":\"03/04/2017\",\r\n    \"department\":\"FireDept\"\r\n}",
+							"raw": "{\r\n    \"docName\": \"Test Document Name\",\r\n    \"category\": \"Test Category 1\",\r\n    \"date\": \"03/04/2020\",\r\n    \"description\": \"Test description\",\r\n    \"createdEmp\": \"Isuri Punchihewa\",\r\n    \"empTitle\": \"ASE\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

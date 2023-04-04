@@ -17,7 +17,6 @@ async function connectMongoDB() {
   await mongoose.connect('mongodb+srv://itpHashan:itpHashan@cluster0.igb3mon.mongodb.net/?retryWrites=true&w=majority');
 }
 
-app.use('/api/employee', require('./route/employee.route'));
 app.use('/api/document', require('./route/document.route'));
 
 app.listen(port, () => {
