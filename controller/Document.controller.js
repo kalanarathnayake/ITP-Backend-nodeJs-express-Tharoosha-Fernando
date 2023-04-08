@@ -1,4 +1,3 @@
-const Employee = require("../model/Employee.model");
 const Document = require("../model/Document.model");
 
 //add document record
